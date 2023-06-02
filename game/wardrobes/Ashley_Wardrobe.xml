@@ -1,0 +1,211 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<Wardrobe name="Ashley_Wardrobe">
+    <FullSets>
+        <Outfit name="Ashley Basic Outfit">
+            <UpperBody>
+                <Item alpha="0.95" blue="0.34" green="0.54" name="Strapless_Bra" red="0.18" />
+                <Item alpha="0.95" blue="0.34" green="0.54" name="Sleveless_Top" red="0.18" />
+            </UpperBody>
+            <LowerBody>
+                <Item alpha="0.95" blue="0.56" green="0.7" name="Suit_Pants" red="0.77" />
+                <Item alpha="0.95" blue="0.34" green="0.54" name="Cotton_Panties" red="0.18" />
+            </LowerBody>
+            <Feet>
+                <Item alpha="0.95" blue="0.34" green="0.54" name="Sneakers" palpha="1" pattern="Pattern_1" pblue="1" pgreen="1" pred="1" red="0.18" />
+                <Item alpha="0.95" blue="0.95" green="0.95" name="Long_Socks" red="0.95" />
+            </Feet>
+            <Accessories>
+                <Item alpha="0.95" blue="0.34" green="0.54" name="Full_Shimmer" red="0.18" />
+            </Accessories>
+        </Outfit>
+        <Outfit name="Ashley Workout Full Outfit">
+            <UpperBody>
+                <Item alpha="0.95" blue="0.95" green="0.95" name="Sports_Bra" red="0.95" />
+                <Item alpha="0.95" blue="0.6" green="0.8" name="Tanktop" red="0.0" />
+            </UpperBody>
+            <LowerBody>
+                <Item alpha="0.95" blue="0.15" green="0.15" name="Leggings" red="0.15" />
+                <Item alpha="0.95" blue="0.34" green="0.54" name="Cotton_Panties" red="0.18" />
+            </LowerBody>
+            <Feet>
+                <Item alpha="1.0" blue="1" green="1" name="Short_Socks" red="1" />
+                <Item alpha="0.95" blue="0.34" green="0.54" name="Sneakers" palpha="1" pattern="Pattern_1" pblue="1" pgreen="1" pred="1" red="0.18" />
+            </Feet>
+            <Accessories />
+        </Outfit>
+        <Outfit name="Ashley Casual Vest and Capris">
+            <UpperBody>
+                <Item alpha="0.95" blue="0.34" green="0.54" name="Strappy_Bra" red="0.18" />
+                <Item alpha="0.95" blue="0.34" green="0.54" name="Tight_Vest" red="0.18" />
+            </UpperBody>
+            <LowerBody>
+                <Item alpha="0.95" blue="0.67" green="0.278" name="Capris" red="0.0" />
+                <Item alpha="0.95" blue="0.34" green="0.54" name="Strappy_Panties" red="0.18" />
+            </LowerBody>
+            <Feet>
+                <Item alpha="0.95" blue="0.15" green="0.15" name="Heels" red="0.15" />
+            </Feet>
+            <Accessories />
+        </Outfit>
+        <Outfit name="Ashley Comfy Boy Shorts">
+            <UpperBody>
+                <Item alpha="0.95" blue="0.95" green="0.95" name="Tanktop" red="0.95" />
+            </UpperBody>
+            <LowerBody>
+                <Item alpha="0.95" blue="0.34" green="0.54" name="Booty_Shorts" red="0.18" />
+                <Item alpha="0.95" blue="0.15" green="0.15" name="Thong" red="0.15" />
+            </LowerBody>
+            <Feet>
+                <Item alpha="0.95" blue="0.14" green="0.21" name="Sandles" red="0.26" />
+            </Feet>
+            <Accessories />
+        </Outfit>
+        <Outfit name="Ashley Night Out Outfit">
+            <UpperBody>
+                <Item alpha="0.95" blue="0.15" green="0.15" name="Evening_Dress" red="0.15" />
+                <Item alpha="0.95" blue="0.19" green="0.36" name="Lace_Bra" red="0.1" />
+            </UpperBody>
+            <LowerBody />
+            <Feet>
+                <Item alpha="0.95" blue="0.19" green="0.36" name="Sandal_Heels" red="0.1" />
+            </Feet>
+            <Accessories>
+                <Item alpha="0.95" blue="0.78" green="0.95" name="Necklace_Set" red="0.95" />
+            </Accessories>
+        </Outfit>
+        <Outfit name="Ashley Sexy Girls Outfit">
+            <UpperBody>
+                <Item alpha="0.95" blue="0.34" green="0.54" name="Lace_Bra" red="0.18" />
+            </UpperBody>
+            <LowerBody>
+                <Item alpha="0.95" blue="0.5" green="0.5" name="Jean_Hotpants" red="0.5" />
+                <Item alpha="0.95" blue="0.34" green="0.54" name="Thong" red="0.18" />
+            </LowerBody>
+            <Feet>
+                <Item alpha="0.95" blue="0.15" green="0.15" name="Heels" red="0.15" />
+            </Feet>
+            <Accessories />
+        </Outfit>
+        <Outfit name="Ashley Sexy Top">
+            <UpperBody>
+                <Item alpha="0.95" blue="0.34" green="0.54" name="Belted_Top" red="0.18" />
+            </UpperBody>
+            <LowerBody>
+                <Item alpha="0.95" blue="0.15" green="0.15" name="Thong" red="0.15" />
+                <Item alpha="0.95" blue="0.56" green="0.7" name="Suit_Pants" red="0.77" />
+            </LowerBody>
+            <Feet>
+                <Item alpha="0.95" blue="0.34" green="0.54" name="Sneakers" palpha="1" pattern="Pattern_1" pblue="1" pgreen="1" pred="1" red="0.18" />
+                <Item alpha="0.95" blue="0.95" green="0.95" name="Short_Socks" red="0.95" />
+            </Feet>
+            <Accessories />
+        </Outfit>
+    </FullSets>
+    <UnderwearSets>
+        <Outfit name="Ashley Basic Underwear">
+            <UpperBody>
+                <Item alpha="0.95" blue="0.34" green="0.54" name="Bra" red="0.18" />
+            </UpperBody>
+            <LowerBody>
+                <Item alpha="0.95" blue="0.34" green="0.54" name="Cotton_Panties" red="0.18" />
+            </LowerBody>
+            <Feet />
+            <Accessories />
+        </Outfit>
+        <Outfit name="Ashley Sexy Underwear">
+            <UpperBody>
+                <Item alpha="0.95" blue="0.34" green="0.54" name="Strappy_Bra" red="0.18" />
+            </UpperBody>
+            <LowerBody>
+                <Item alpha="0.95" blue="0.34" green="0.54" name="Strappy_Panties" red="0.18" />
+            </LowerBody>
+            <Feet>
+                <Item alpha="0.65" blue="0.15" green="0.15" name="Thigh_Highs" red="0.15" />
+            </Feet>
+            <Accessories />
+        </Outfit>
+        <Outfit name="Ashley Slutty Underwear">
+            <UpperBody>
+                <Item alpha="0.79" blue="0.34" green="0.54" name="Teddy" red="0.18" />
+            </UpperBody>
+            <LowerBody>
+                <Item alpha="0.95" blue="0.34" green="0.54" name="Tiny_Lace_Panties" red="0.18" />
+            </LowerBody>
+            <Feet>
+                <Item alpha="0.95" blue="0.15" green="0.15" name="Fishnets" red="0.15" />
+            </Feet>
+            <Accessories />
+        </Outfit>
+        <Outfit name="Ashley High Slut Lingerie">
+            <UpperBody>
+                <Item alpha="0.95" blue="0.34" green="0.54" name="Heart_Pasties" red="0.18" />
+            </UpperBody>
+            <LowerBody />
+            <Feet>
+                <Item alpha="0.95" blue="0.34" green="0.54" name="Garter_and_Fishnets" palpha="0.95" pattern="Pattern_1" pblue="0.19" pgreen="0.36" pred="0.1" red="0.18" />
+            </Feet>
+            <Accessories />
+        </Outfit>
+    </UnderwearSets>
+    <OverwearSets>
+        <Outfit name="Ashley Business Overwear">
+            <UpperBody>
+                <Item alpha="0.95" blue="0.5" green="0.5" name="Suit_Jacket" red="0.5" />
+                <Item alpha="0.95" blue="0.34" green="0.54" name="Tight_Vest" red="0.18" />
+            </UpperBody>
+            <LowerBody>
+                <Item alpha="0.95" blue="0.14" green="0.21" name="Jeans" red="0.26" />
+            </LowerBody>
+            <Feet>
+                <Item alpha="0.95" blue="0.34" green="0.54" name="Sneakers" palpha="1" pattern="Pattern_1" pblue="1" pgreen="1" pred="1" red="0.18" />
+            </Feet>
+            <Accessories />
+        </Outfit>
+        <Outfit name="Ashley Comfy Overwear">
+            <UpperBody>
+                <Item alpha="0.95" blue="0.19" green="0.36" name="Long_Tshirt" red="0.1" />
+            </UpperBody>
+            <LowerBody>
+                <Item alpha="0.95" blue="0.15" green="0.15" name="Leggings" red="0.15" />
+            </LowerBody>
+            <Feet>
+                <Item alpha="0.95" blue="0.19" green="0.36" name="Slips" red="0.1" />
+            </Feet>
+            <Accessories />
+        </Outfit>
+        <Outfit name="Ashley Only Dress">
+            <UpperBody>
+                <Item alpha="0.95" blue="0.19" green="0.36" name="Evening_Dress" red="0.1" />
+            </UpperBody>
+            <LowerBody />
+            <Feet>
+                <Item alpha="0.95" blue="0.15" green="0.15" name="Heels" red="0.15" />
+            </Feet>
+            <Accessories />
+        </Outfit>
+        <Outfit name="Ashley Open Jacket Overwear">
+            <UpperBody>
+                <Item alpha="0.95" blue="0.5" green="0.5" name="Suit_Jacket" red="0.5" />
+            </UpperBody>
+            <LowerBody>
+                <Item alpha="0.95" blue="0.14" green="0.21" name="Capris" red="0.26" />
+            </LowerBody>
+            <Feet>
+                <Item alpha="0.95" blue="0.15" green="0.15" name="Heels" red="0.15" />
+            </Feet>
+            <Accessories />
+        </Outfit>
+        <Outfit name="Ashley Khakis and Sexy Top">
+            <UpperBody>
+                <Item alpha="0.95" blue="0.34" green="0.54" name="Belted_Top" red="0.18" />
+            </UpperBody>
+            <LowerBody>
+                <Item alpha="0.95" blue="0.56" green="0.7" name="Suit_Pants" red="0.77" />
+            </LowerBody>
+            <Feet>
+                <Item alpha="0.95" blue="0.14" green="0.21" name="Sandles" red="0.26" />
+            </Feet>
+            <Accessories />
+        </Outfit>
+    </OverwearSets>
+</Wardrobe>

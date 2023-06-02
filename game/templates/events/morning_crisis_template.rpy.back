@@ -1,0 +1,42 @@
+init 2 python:
+    def crisis_TEMPLATE_requirement():
+        if not day%7 == 5 and mc.is_home: # not on saturday mornings and didn't spend the night at girlfriend's house
+            return True
+        return False
+
+
+    TEMPLATE_action = ActionMod("TEMPLATE event description", crisis_TEMPLATE_requirement,"crisis_TEMPLATE_label",
+        menu_tooltip = "Expanded Description.", category="Home", is_crisis = True, is_morning_crisis = True)
+
+
+label crisis_TEMPLATE_label():
+    # Grab any people you might need and set the scene.
+    $ scene_manager = Scene()
+    $ the_person = get_random_from_list([aunt, cousin])
+
+    #opening dialogue
+    "You hear a knock on your door. [mom.possessive_title] appears at your door."
+    mom "Hey! [the_person.fname] stopped by to join us for breakfast! I'm making pancakes!"
+    $ scene_manager.clear_scene()
+
+    "You stumble out of bed and into the kitchen. [lily.title] and [the_person.possessive_title] are sitting at the table while [mom.title] makes breakfast."
+    $ scene_manager.add_actor(the_person, position = "sitting")
+    $ scene_manager.add_actor(mom, position = "walking_away",display_transform = character_left)
+    $ scene_manager.add_actor(lily, position = "sitting", display_transform = character_left_flipped)
+
+    if the_person == aunt:  #you can split dialogue based on who gets randomly chosen
+        the_person "Good morning [the_person.mc_title]!"
+    else:
+        the_person "Hey Dweeb."
+    "The women are all talking."
+    if lily.sluttiness > 80:    #Sluttiness checks are good for gauging corruption progress with girls.
+        lily "Ugh, it's so hot in here."
+        "[lily.possessive_title] strips for no apparent reason."
+        $ scene_manager.strip_full_outfit(person = lily)
+        $ mc.change_locked_clarity(20)  #Add clarity when encountering sexual situations.
+    "You eat your breakfast then get ready for the day."
+
+
+    #Cleanup
+    $ scene_manager.clear_scene()
+    return

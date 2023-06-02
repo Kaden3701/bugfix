@@ -1,0 +1,1 @@
+Place wardrobe XML files here to have them show up on the import list.

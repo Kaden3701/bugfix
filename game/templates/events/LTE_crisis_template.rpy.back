@@ -1,0 +1,46 @@
+#Limited Time Events are useful for situations where we "catch" girls in the act of something, or are otherwise triggered based on talking to them or entering the same room
+#Limited Time is a bit of a misnomer since they can have effectively unlimited duration. The actual time limit is optional.
+#In this template, we create an event where we discover Jennifer is randomly at the sex shop.
+
+init -1 python:
+    def LTE_crisis_TEMPLATE_requirement(the_person):    #The requirement function has to both control WHO can get this event, as well as control when it can be triggered.
+        if the_person != mom:
+            return False
+        elif the_person.location == sex_store:
+            return True
+        return False        #This event should only trigger if we find Jennifer at the sex store.
+
+    limited_time_event_pool.append([
+        Action("Sister walk in", LTE_crisis_TEMPLATE_requirement, "LTE_crisis_TEMPLATE_label", event_duration = 5),
+        4, "on_enter"])  #Format for entry, [0] = Action, [1] = Weight of action (odds of occuring, less is rare), [2] = "on_enter" or "on_talk" for how it triggers.
+
+label LTE_crisis_TEMPLATE_label(the_person):
+    "As you step into the sex store, you see a familiar face. [the_person.possessive_title] is browsing some dildos."
+    $ the_person.draw_person()
+    "You walk up to her."
+    mc.name "Finding what you neem ma'am?"
+    if the_person sluttiness < 20:  #Startle her
+        the_person "[the_person.mc_title]! I was just... I was... what are you doing here!?!"
+        mc.name "I could ask you the same thing."
+        "[the_person.title] is pretty flustered."
+        the_person "That's none of your business. Now let me do my shopping in peace!"
+        $ the_person.change_happiness(-2)
+        $ the_person.change_slut(1)
+        "You laught but leave her alone."
+    elif the_person.sluttiness < 60:    #Embarassed but not too prude either.
+        the_person "Ahh, [the_person.mc_title]! I was just, you know, seeing what all is available."
+        "She is embarassed you found her here."
+        mc.name "Hey, I'm not judging. If you need a toy to help with masturbating that's your business."
+        $ the_person.change_obedience(2)
+        $ the_person.change_slut(1)
+        the_person "Ahh, I wasn't buying anything... could I have some privacy while I look please?"
+        "You laught but leave her alone."
+    else:   #slutty version asks for MC opinion while dildo shopping.
+        the_person "Ahh! [the_person.mc_title]! I'm glad you're here. What do you think about this dildo?"
+        "She holds up a pretty average looking rubber dildo."
+        mc.name "It looks nice. What do you need it for?"
+        the_person "Well, sometimes I get lonely, especially when you are out working..."
+        mc.name "I think it would work fine for that. Isn't that really more up to you?"
+        the_person "I suppose you're right. I'm going to keep looking."
+        "You help [the_person.possessive_title] shop for a new dildo for a bit before saying goodbye."
+    return

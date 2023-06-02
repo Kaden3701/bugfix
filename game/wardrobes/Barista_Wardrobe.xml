@@ -1,0 +1,61 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<Wardrobe name="Barista_Wardrobe">
+    <FullSets>
+    </FullSets>
+    <UnderwearSets>
+    </UnderwearSets>
+    <OverwearSets>
+        <Outfit name="Trendy Buttoned Blouse and Suit Pants with Slips">
+            <UpperBody>
+                <Item alpha="0.95" blue="0.15" green="0.15" name="Long_Sleeve_Blouse" red="0.15" />
+                <Item alpha="0.95" blue="0.2" green="0.43" name="Apron" red="0.18" />
+            </UpperBody>
+            <LowerBody>
+                <Item alpha="0.95" blue="0.15" green="0.15" name="Suit_Pants" red="0.15" />
+            </LowerBody>
+            <Feet>
+                <Item alpha="0.95" blue="0.15" green="0.15" name="Slips" red="0.15" />
+            </Feet>
+            <Accessories />
+        </Outfit>
+        <Outfit name="Trendy Sweater and Suit Pants with Slips">
+            <UpperBody>
+                <Item alpha="0.95" blue="0.2" green="0.43" name="Apron" red="0.18" />
+                <Item alpha="0.95" blue="0.15" green="0.15" name="Sweater" red="0.15" />
+            </UpperBody>
+            <LowerBody>
+                <Item alpha="0.95" blue="0.15" green="0.15" name="Suit_Pants" red="0.15" />
+            </LowerBody>
+            <Feet>
+                <Item alpha="0.95" blue="0.15" green="0.15" name="Slips" red="0.15" />
+            </Feet>
+            <Accessories />
+        </Outfit>
+        <Outfit name="Trendy Sweater and Pencil Skirt with Slips">
+            <UpperBody>
+                <Item alpha="0.95" blue="0.2" green="0.43" name="Apron" red="0.18" />
+                <Item alpha="0.95" blue="0.15" green="0.15" name="Sweater" red="0.15" />
+            </UpperBody>
+            <LowerBody>
+                <Item alpha="0.95" blue="0.15" green="0.15" name="Pencil_Skirt" red="0.15" />
+            </LowerBody>
+            <Feet>
+                <Item alpha="0.95" blue="0.15" green="0.15" name="Slips" red="0.15" />
+            </Feet>
+            <Accessories />
+        </Outfit>
+        <Outfit name="Lace Sweater and Pencil Skirt with Heels">
+            <UpperBody>
+                <Item alpha="0.95" blue="0.2" green="0.43" name="Apron" red="0.18" />
+                <Item alpha="0.95" blue="0.15" green="0.15" name="Lace_Sweater" red="0.15" />
+            </UpperBody>
+            <LowerBody>
+                <Item alpha="0.95" blue="0.15" green="0.15" name="Pencil_Skirt" red="0.15" />
+            </LowerBody>
+            <Feet>
+                <Item alpha="0.95" blue="0.15" green="0.15" name="Heels" red="0.15" />
+            </Feet>
+            <Accessories />
+        </Outfit>		
+    </OverwearSets>
+</Wardrobe>

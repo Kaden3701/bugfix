@@ -1,0 +1,110 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<Wardrobe name="Maid_Wardrobe">
+    <FullSets>
+        <Outfit name="Maid Outfit">
+            <UpperBody>
+                <Item alpha="0.95" blue="0.95" green="0.95" name="Bralette" red="0.95" />
+                <Item alpha="0.95" blue="0.15" green="0.15" name="Dress_Shirt" red="0.15" />
+                <Item alpha="0.95" blue="0.95" green="0.95" name="Apron" red="0.95" />
+            </UpperBody>
+            <LowerBody>
+                <Item alpha="0.95" blue="0.95" green="0.95" name="Cute_Panties" red="0.95" />
+                <Item alpha="0.95" blue="0.15" green="0.15" name="Skirt" red="0.15" />
+            </LowerBody>
+            <Feet>
+                <Item alpha="0.95" blue="0.95" green="0.95" name="High_Socks" red="0.95" />
+                <Item alpha="0.95" blue="0.15" green="0.15" name="Slips" red="0.15" />
+            </Feet>
+            <Accessories>
+                <Item alpha="0.95" blue="0.15" green="0.15" name="Upper_Eye_Shadow" red="0.15" />
+                <Item alpha="0.75" blue="0.325" green="0.039" name="Lipstick" red="0.843" />
+            </Accessories>
+        </Outfit>
+        <Outfit name="Slutty Maid Outfit">
+            <UpperBody>
+                <Item alpha="0.95" blue="0.95" green="0.95" name="Apron" red="0.95" />
+                <Item alpha="0.95" blue="0.15" green="0.15" name="Lace_Sweater" red="0.15" />
+                <Item alpha="0.95" blue="0.15" green="0.15" name="Cincher" red="0.15" />
+                <Item alpha="0.95" blue="0.95" green="0.95" name="Quarter_Cup_Bra" red="0.95" />
+            </UpperBody>
+            <LowerBody>
+                <Item alpha="0.95" blue="0.15" green="0.15" name="Mini_Skirt" red="0.15" />
+                <Item alpha="0.95" blue="0.95" green="0.95" name="Thong" red="0.95" />
+            </LowerBody>
+            <Feet>
+                <Item alpha="0.95" blue="0.95" green="0.95" name="Thigh_Highs" red="0.95" />
+                <Item alpha="0.95" blue="0.15" green="0.15" name="Boot_Heels" red="0.15" />
+            </Feet>
+            <Accessories>
+                <Item alpha="0.95" blue="0.15" green="0.15" name="Upper_Eye_Shadow" red="0.15" />
+                <Item alpha="0.75" blue="0.325" green="0.039" name="Lipstick" red="0.843" />
+                <Item alpha="0.75" blue="0.15" green="0.15" name="Full_Shimmer" red="0.15" />
+                <Item alpha="0.8" blue="0.95" green="0.95" name="Wide_Choker" red="0.95" />
+            </Accessories>
+        </Outfit>
+    </FullSets>
+    <UnderwearSets>
+		<Outfit name="Maid Underwear 1">
+            <UpperBody>
+                <Item alpha="0.95" blue="0.95" green="0.95" name="Bralette" red="0.95" />
+			</UpperBody>
+            <LowerBody>
+                <Item alpha="0.95" blue="0.95" green="0.95" name="Cute_Panties" red="0.95" />
+			</LowerBody>
+            <Feet>
+                <Item alpha="0.95" blue="0.95" green="0.95" name="High_Socks" red="0.95" />
+			</Feet>
+            <Accessories>
+                <Item alpha="0.95" blue="0.15" green="0.15" name="Upper_Eye_Shadow" red="0.15" />
+                <Item alpha="0.75" blue="0.325" green="0.039" name="Lipstick" red="0.843" />
+            </Accessories>
+		</Outfit>
+		<Outfit name="Maid Underwear 2">
+            <UpperBody>
+                <Item alpha="0.95" blue="0.15" green="0.15" name="Cincher" red="0.15" />
+                <Item alpha="0.95" blue="0.95" green="0.95" name="Quarter_Cup_Bra" red="0.95" />
+            </UpperBody>
+            <LowerBody>
+                <Item alpha="0.95" blue="0.95" green="0.95" name="Thong" red="0.95" />
+            </LowerBody>
+            <Feet>
+                <Item alpha="0.95" blue="0.95" green="0.95" name="Thigh_Highs" red="0.95" />
+            </Feet>
+            <Accessories>
+                <Item alpha="0.95" blue="0.15" green="0.15" name="Upper_Eye_Shadow" red="0.15" />
+                <Item alpha="0.75" blue="0.325" green="0.039" name="Lipstick" red="0.843" />
+                <Item alpha="0.75" blue="0.15" green="0.15" name="Full_Shimmer" red="0.15" />
+            </Accessories>
+		</Outfit>
+    </UnderwearSets>
+    <OverwearSets>
+        <Outfit name="Maid Overwear 1">
+            <UpperBody>
+                <Item alpha="0.95" blue="0.15" green="0.15" name="Dress_Shirt" red="0.15" />
+                <Item alpha="0.95" blue="0.95" green="0.95" name="Apron" red="0.95" />
+            </UpperBody>
+            <LowerBody>
+                <Item alpha="0.95" blue="0.15" green="0.15" name="Skirt" red="0.15" />
+            </LowerBody>
+            <Feet>
+                <Item alpha="0.95" blue="0.15" green="0.15" name="Slips" red="0.15" />
+            </Feet>
+			<Accessories/>
+        </Outfit>
+        <Outfit name="Maid Overwear 2">
+            <UpperBody>
+                <Item alpha="0.95" blue="0.95" green="0.95" name="Apron" red="0.95" />
+                <Item alpha="0.95" blue="0.15" green="0.15" name="Lace_Sweater" red="0.15" />
+            </UpperBody>
+            <LowerBody>
+                <Item alpha="0.95" blue="0.15" green="0.15" name="Mini_Skirt" red="0.15" />
+            </LowerBody>
+            <Feet>
+                <Item alpha="0.95" blue="0.15" green="0.15" name="Boot_Heels" red="0.15" />
+            </Feet>
+            <Accessories>
+                <Item alpha="0.8" blue="0.95" green="0.95" name="Wide_Choker" red="0.95" />
+            </Accessories>
+        </Outfit>		
+    </OverwearSets>
+</Wardrobe>

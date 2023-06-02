@@ -1,0 +1,153 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<Wardrobe name="Camilla_Wardrobe">
+  <FullSets>
+      <Outfit name="Camilla Basic Dress">
+          <UpperBody>
+              <Item alpha="0.95" blue="0.85" green="0.4" name="Bra" red="0.71" />
+              <Item alpha="0.95" blue="0.59" green="0.31" name="Evening_Dress" red="0.45" />
+          </UpperBody>
+          <LowerBody>
+              <Item alpha="0.95" blue="0.85" green="0.4" name="Panties" red="0.71" />
+          </LowerBody>
+          <Feet>
+              <Item alpha="0.95" blue="0.14" green="0.21" name="Slips" red="0.26" />
+          </Feet>
+          <Accessories />
+      </Outfit>
+      <Outfit name="Camilla Blouse and Skirt">
+          <UpperBody>
+              <Item alpha="0.95" blue="0.85" green="0.4" name="Bra" red="0.71" />
+              <Item alpha="0.95" blue="0.87" green="0.86" name="Frilly_Longsleeve_Shirt" red="0.98" />
+          </UpperBody>
+          <LowerBody>
+              <Item alpha="0.95" blue="0.85" green="0.4" name="Panties" red="0.71" />
+              <Item alpha="0.95" blue="0.59" green="0.31" name="Lace_Skirt" red="0.45" />
+          </LowerBody>
+          <Feet>
+              <Item alpha="0.95" blue="0.15" green="0.15" name="Slips" red="0.15" />
+          </Feet>
+          <Accessories />
+      </Outfit>
+      <Outfit name="Camilla Summer Dress">
+          <UpperBody>
+              <Item alpha="0.95" blue="0.4" green="0.4" name="Strappy_Bra" red="0.4" />
+              <Item alpha="0.95" blue="0.59" green="0.31" name="Summer_Dress" red="0.45" />
+          </UpperBody>
+          <LowerBody>
+              <Item alpha="0.95" blue="0.4" green="0.4" name="Strappy_Panties" red="0.4" />
+          </LowerBody>
+          <Feet>
+              <Item alpha="0.95" blue="0.15" green="0.15" name="Heels" red="0.15" />
+          </Feet>
+          <Accessories />
+      </Outfit>
+      <Outfit name="Camilla Salsa Outfit">
+          <UpperBody>
+              <Item alpha="0.95" blue="0.4" green="0.4" name="Strappy_Bra" red="0.4" />
+              <Item alpha="0.95" blue="0.85" green="0.4" name="Frilly_Dress" red="0.71" />
+          </UpperBody>
+          <LowerBody>
+              <Item alpha="0.95" blue="0.4" green="0.4" name="Strappy_Panties" red="0.4" />
+          </LowerBody>
+          <Feet>
+              <Item alpha="0.95" blue="0.15" green="0.15" name="Heels" red="0.15" />
+          </Feet>
+          <Accessories />
+      </Outfit>
+      <Outfit name="Camilla Sexy Salsa Outfit">
+          <UpperBody>
+              <Item alpha="0.95" blue="0.85" green="0.4" name="Frilly_Dress" red="0.71" />
+          </UpperBody>
+          <LowerBody />
+          <Feet>
+              <Item alpha="0.95" blue="0.85" green="0.4" name="Heels" red="0.71" />
+              <Item alpha="0.66" blue="0.15" green="0.15" name="High_Socks" red="0.15" />
+          </Feet>
+          <Accessories />
+      </Outfit>
+  </FullSets>
+  <UnderwearSets>
+      <Outfit name="Camilla Plain Underwear">
+          <UpperBody>
+              <Item alpha="0.95" blue="0.85" green="0.4" name="Bra" red="0.71" />
+          </UpperBody>
+          <LowerBody>
+              <Item alpha="0.95" blue="0.85" green="0.4" name="Panties" red="0.71" />
+          </LowerBody>
+          <Feet />
+          <Accessories />
+      </Outfit>
+      <Outfit name="Camilla Cute Underwear">
+          <UpperBody>
+              <Item alpha="0.95" blue="0.85" green="0.4" name="Strappy_Bra" red="0.71" />
+          </UpperBody>
+          <LowerBody>
+              <Item alpha="0.95" blue="0.85" green="0.4" name="Strappy_Panties" red="0.71" />
+          </LowerBody>
+          <Feet />
+          <Accessories />
+      </Outfit>
+      <Outfit name="Camilla Sensual Underwear">
+          <UpperBody />
+          <LowerBody>
+              <Item alpha="0.66" blue="0.15" green="0.15" name="Cute_Lace_Panties" red="0.15" />
+          </LowerBody>
+          <Feet>
+              <Item alpha="0.66" blue="0.15" green="0.15" name="High_Socks" red="0.15" />
+          </Feet>
+          <Accessories />
+      </Outfit>
+      <Outfit name="Camilla Just Socks Underwear">
+          <UpperBody />
+          <LowerBody />
+          <Feet>
+              <Item alpha="0.66" blue="0.15" green="0.15" name="High_Socks" red="0.15" />
+          </Feet>
+          <Accessories />
+      </Outfit>
+  </UnderwearSets>
+  <OverwearSets>
+      <Outfit name="Camilla Sexy Dress">
+          <UpperBody>
+              <Item alpha="0.95" blue="0.59" green="0.31" name="Two_Piece_Dress" red="0.45" />
+          </UpperBody>
+          <LowerBody />
+          <Feet>
+              <Item alpha="0.95" blue="0.14" green="0.21" name="High_Heels" red="0.26" />
+          </Feet>
+          <Accessories />
+      </Outfit>
+      <Outfit name="Camilla Salsa Dress">
+          <UpperBody>
+              <Item alpha="0.95" blue="0.85" green="0.4" name="Frilly_Dress" red="0.71" />
+          </UpperBody>
+          <LowerBody />
+          <Feet>
+              <Item alpha="0.95" blue="0.15" green="0.15" name="Heels" red="0.15" />
+          </Feet>
+          <Accessories />
+      </Outfit>
+      <Outfit name="Camilla Normal Dress">
+          <UpperBody>
+              <Item alpha="0.95" blue="0.59" green="0.31" name="Evening_Dress" red="0.45" />
+          </UpperBody>
+          <LowerBody />
+          <Feet>
+              <Item alpha="0.95" blue="0.15" green="0.15" name="Slips" red="0.15" />
+          </Feet>
+          <Accessories />
+      </Outfit>
+      <Outfit name="Camilla Workout Gear">
+          <UpperBody>
+              <Item alpha="0.95" blue="0.85" green="0.4" name="Tanktop" red="0.71" />
+          </UpperBody>
+          <LowerBody>
+              <Item alpha="0.95" blue="0.15" green="0.15" name="Booty_Shorts" red="0.15" />
+          </LowerBody>
+          <Feet>
+              <Item alpha="0.95" blue="0.85" green="0.4" name="Sneakers" palpha="1" pattern="Pattern_1" pblue="1" pgreen="1" pred="1" red="0.71" />
+          </Feet>
+          <Accessories />
+      </Outfit>
+  </OverwearSets>
+</Wardrobe>

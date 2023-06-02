@@ -1,0 +1,206 @@
+#THIS IS AN EXAMPLE OF CODE THAT YOU WOULD ADD TO A PERSON'S INIT FILE TO USE A PROGRESSION SCENE WITH THEM.
+
+init 5 python:
+    add_label_hijack("normal_start", "activate_TEMPLATE_mod_core")
+    add_label_hijack("after_load", "update_TEMPLATE_mod_core")
+
+    def TEMPLATE_scene_mod_initialization():
+        TEMPLATE_progression_scene_init()
+        return
+
+label activate_TEMPLATE_mod_core(stack):
+    python:
+        TEMPLATE_scene_mod_initialization()
+        # continue on the hijack stack if needed
+        execute_hijack_call(stack)
+    return
+
+label update_TEMPLATE_mod_core(stack):
+    python:
+        if "TEMPLATE_progression_scene" not in globals():
+            TEMPLATE_progression_scene_init()
+        else:
+            TEMPLATE_progression_scene.compile_scenes(TEMPLATE_progression_scene)
+        execute_hijack_call(stack)
+    return
+
+
+
+init 1 python:
+    def TEMPLATE_progression_scene_0_req(the_group):    #Requirements for the basic scene. Should almost always be true.
+        return True
+
+    def TEMPLATE_progression_scene_1_req(the_group):    #Requirements fo the second stage.
+        if the_group[0].sluttiness > 20:
+            return True
+        return False
+
+
+    def TEMPLATE_progression_scene_action_req(the_person):  #Use this function to determine the requirement for when to actually run the scene itself.
+        if the_person.location == university:
+            return True
+        return False
+
+    def TEMPLATE_unit_test_func(the_group):
+        for person in the_group:
+            person.change_slut(30)
+            person.change_energy(200)
+        mc.change_energy(200)
+        return
+
+init 2 python:
+    def TEMPLATE_progression_scene_compile_scenes(the_progression_scene):
+        #WARNING: The order of the following lists is critical! They are referenced based on their indexes!!!
+        the_progression_scene.start_scene_list = ["TEMPLATE_progression_scene_intro_0", "TEMPLATE_progression_scene_intro_1"]
+        the_progression_scene.req_list = [TEMPLATE_progression_scene_0_req, TEMPLATE_progression_scene_1_req]
+        the_progression_scene.trans_list = ["kaya_erica_trans_scene_0", "kaya_erica_trans_scene_1"]
+        the_progression_scene.final_scene_list = ["TEMPLATE_progression_scene_scene_0", "TEMPLATE_progression_scene_scene_1"]
+        the_progression_scene.regress_scene_list = []   #Add labels for regression here if desired.
+        return
+
+    TEMPLATE_progression_scene_action = Action("TEMPLATE Fuck session", TEMPLATE_progression_scene_action_req, "TEMPLATE_progression_scene_action_label")
+
+    def TEMPLATE_progression_scene_init():  #Run this during init only
+        global TEMPLATE_progression_scene
+        TEMPLATE_progression_scene = Progression_Scene(
+            compile_scenes = TEMPLATE_progression_scene_compile_scenes,
+            start_scene_list = [],  #Set via the compile action
+            req_list = [],  #Set via the compile action
+            trans_list = [],    #Set via the compile action
+            final_scene_list = [],  #Set via the compile action
+            intro_scene = "TEMPLATE_progression_scene_intro_scene", #Scene that plays the first time this scene is run
+            exit_scene = "TEMPLATE_progression_scene_exit_scene",   #Scene for if the player chooses to exit the scene
+            progression_scene_action = TEMPLATE_progression_scene_action,      #The action used to call for this progression scene.
+            choice_scene = "TEMPLATE_progression_scene_study_choice",   #The action used to let player decide if they want to continue the scene or leave
+            stage = -1,     #-1 will play the intro
+            person_action = True,   #If this progression scene should run when encountering a person
+            business_action = False,    #If this progression scene is a mandatory business event
+            is_random = False,  #If this progression scene is a randomly occuring crisis event
+            unit_test_func = TEMPLATE_unit_test_func,  #Set a custom unit test function to test this progression event. Runs between every cycle
+            advance_time = True,    #Currently this is broke. Advance time in the scenes themselves for now...
+            is_multiple_choice = False, #If MC can choose what final scene he wants
+            multiple_choice_scene = None,   #The scene that lets MC choose which final scene he wants.
+            regress_scene_list = [])    #If the scene can regress, fill this with appropriate regression scenes to play between intro and final scenes.
+        TEMPLATE_progression_scene.compile_scenes(TEMPLATE_progression_scene)   #This will populate the scenes that are blank above.
+
+
+label TEMPLATE_progression_scene_action_label(the_person):  #Use (the_person) if this event is attached to a person, otherwise leave params blank, EG: TEMPLATE_progression_scene_action_label():
+    "You can use this section to setup anything that is universal to the whole scene, EG location, etc."
+    call progression_scene_scene_label(TEMPLATE_progression_scene, [the_person]) from _TEMPLATE_progression_scene_call_test_01  #[the_person] parameter should be a list of people in the scene itself, IE [mom], [mom,lily], [sarah,erica,mom], etc
+    return
+
+label TEMPLATE_progression_scene_intro_scene(the_group):
+    $ the_person = the_group[0]
+    $ mc.change_location(bedroom)
+    "This is an intro scene for the first time you encounter this event."
+    $ the_person.draw_person()
+    the_person "Good job!"
+    "The intro is over."
+    $ clear_scene()
+    #You probably want to to advance time after this
+    # call advance_time from _call_advance_TEMPLATE_progression_scene_adv_01
+    return
+
+label TEMPLATE_progression_scene_intro_0(the_group):
+    $ the_person = the_group[0]
+    "This is the most basic intro scene. It should run after you have experienced the intro."
+    $ the_person.draw_person()
+    the_person "Hey, down to fuck?"
+    return
+
+label TEMPLATE_progression_scene_intro_1(the_group):
+    $ the_person = the_group[0]
+    "This is the second intro scene, played after you unlocked it."
+    the_person "Hey, I had fun last time when you fucked my ass!"
+    return
+
+#For more progression, add more scenes.
+
+label TEMPLATE_progression_scene_scene_0(the_group):
+    $ the_person = the_group[0]
+    "This is the most basic final scene.."
+    $ the_person.draw_person()
+    the_person "Alright, let's do it!"
+    call fuck_person(the_person) from _call_sex_description_TEMPLATE_scene_01
+
+    the_person "Whew! that was great!"
+    #You probably want to to advance time after this
+    # call advance_time from _call_advance_TEMPLATE_progression_scene_adv_02
+    return
+
+label TEMPLATE_progression_scene_scene_1(the_group):
+    $ the_person = the_group[0]
+    "This is the second scene. I'm not coding it, but you could code it that she gets naked and bends over, preseting her ass here."
+    $ the_person.draw_person(position = "standing_doggy")
+    the_person "Don't worry, my ass is always ready for you!"
+    call fuck_person(the_person) from _call_sex_description_TEMPLATE_scene_02
+
+    the_person "Oh my god I hope I can walk tomorrow!"
+    #You probably want to to advance time after this
+    #call advance_time from _call_advance_TEMPLATE_progression_scene_adv_03
+    return
+
+
+
+label TEMPLATE_trans_scene_0(the_group):
+    pass
+    #This label should probably never be called.
+    return
+
+label TEMPLATE_trans_scene_1(the_group):
+    $ the_person = the_group[0]
+    "This is the transition to the second scene."
+    the_person "I have another idea though... what if you fucked... my other hole?"
+    mc.name "That's a good idea."
+    return
+
+
+
+label TEMPLATE_progression_scene_study_choice(the_group):
+    $ the_person = the_group[0]
+    "Use this scene to give MC a chance to bail out."
+    "Are you going to fuck her?"
+    menu:
+        "Fuck her":
+            return True
+        "Leave":
+            return False
+    return True
+
+label TEMPLATE_progression_scene_exit_scene(the_group):
+    $ the_person = the_group[0]
+    "Use this scene to show MC bailing out."
+    mc.name "Unfortunately, I don't have time to fuck you. Goodbye."
+    the_person "Bye!"
+    "You stand up and leave the room, leaving the girls to their study session."
+    $ clear_scene()
+    return
+
+label TEMPLATE_multiple_choice_scene_label(the_group):
+    $ the_person = the_group[0]
+    "Use this scene if you want MC to have the option of what to do."
+    "For example."
+    the_person "How do you want to fuck me?"
+    menu:
+        "Vaginal" if 0 in TEMPLATE_progression_scene.scene_unlock_list:
+            the_person "Yay! Let's fuck!"
+            return 0
+        "Anal" if 1 in TEMPLATE_progression_scene.scene_unlock_list:
+            the_person "My ass? Oh boy!"
+            return 1
+    return 0
+
+#Use regression scenes if you want to be able to go back steps in the scene. Useful if requirements are set on the edge of when characters would normally tolerate them.
+label TEMPLATE_regression_scene_scene_0(the_group):
+    the_person "Actually, I don't like it in my ass... can we just fuck instead?"
+    return
+
+label TEMPLATE_regression_scene_scene_1(the_group):
+    pass
+    return
+
+
+
+#This is for reusable scenes and functions required for the scene.
+#If there are any special functions or scenes you want to add, do it here.
+#For example, for the above scene, you could write a script where the girl strips her bottoms and presents her ass to MC.

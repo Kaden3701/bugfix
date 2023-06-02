@@ -1,0 +1,45 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<Wardrobe name="Exported_Wardrobe">
+    <FullSets>
+    </FullSets>
+    <UnderwearSets>
+    </UnderwearSets>
+    <OverwearSets>
+        <Outfit name="Conservative Long Sweater and Suit Pants with Sneakers">
+            <UpperBody>
+                <Item alpha="0.95" blue="0.95" green="0.95" name="Long_Sweater" red="0.95" />
+            </UpperBody>
+            <LowerBody>
+                <Item alpha="0.95" blue="0.95" green="0.95" name="Suit_Pants" red="0.95" />
+            </LowerBody>
+            <Feet>
+                <Item alpha="0.95" blue="0.95" green="0.95" name="Sneakers" palpha="0.95" pattern="Pattern_1" pblue="0.95" pgreen="0.95" pred="0.95" red="0.95" />
+            </Feet>
+            <Accessories />
+        </Outfit>
+        <Outfit name="Conservative Long Sweater and Pencil Skirt with Sneakers">
+            <UpperBody>
+                <Item alpha="0.95" blue="0.95" green="0.95" name="Long_Sweater" red="0.95" />
+            </UpperBody>
+            <LowerBody>
+                <Item alpha="0.95" blue="0.95" green="0.95" name="Pencil_Skirt" red="0.95" />
+            </LowerBody>
+            <Feet>
+                <Item alpha="0.95" blue="0.95" green="0.95" name="Sneakers" palpha="0.95" pattern="Pattern_1" pblue="0.95" pgreen="0.95" pred="0.95" red="0.95" />
+            </Feet>
+            <Accessories />
+        </Outfit>
+        <Outfit name="Conservative Cropped T-Shirt and Pencil Skirt with Heels">
+            <UpperBody>
+                <Item alpha="0.95" blue="0.95" green="0.95" name="Tshirt" red="0.95" />
+            </UpperBody>
+            <LowerBody>
+                <Item alpha="0.95" blue="0.95" green="0.95" name="Pencil_Skirt" red="0.95" />
+            </LowerBody>
+            <Feet>
+                <Item alpha="0.95" blue="0.95" green="0.95" name="Heels" red="0.95" />
+            </Feet>
+            <Accessories />
+        </Outfit>
+    </OverwearSets>
+</Wardrobe>

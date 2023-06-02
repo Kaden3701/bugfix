@@ -1,0 +1,196 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<Wardrobe name="Workout_Wardrobe">
+    <FullSets>
+        <Outfit name="Basic SportsBra Workout">
+            <UpperBody>
+                <Item alpha="1.0" blue="0.18" green="0.18" name="Sports_Bra" palpha="1.0" pattern="Pattern_1" pblue="0.8" pgreen="0.71" pred="0.89" red="0.18" />
+            </UpperBody>
+            <LowerBody>
+                <Item alpha="1.0" blue="0.18" green="0.18" name="Panties" red="0.18" />
+                <Item alpha="1.0" blue="0.18" green="0.18" name="Leggings" red="0.18" />
+            </LowerBody>
+            <Feet>
+                <Item alpha="1.0" blue="0.35" green="0.31" name="Sneakers" palpha="1.0" pattern="Pattern_1" pblue="0.35" pgreen="0.31" pred="0.35" red="0.35" />
+            </Feet>
+            <Accessories />
+        </Outfit>
+        <Outfit name="Pink Tanktop Workout">
+            <UpperBody>
+                <Item alpha="1.0" blue="0.18" green="0.18" name="Sports_Bra" palpha="1.0" pattern="Pattern_1" pblue="0.8" pgreen="0.71" pred="0.89" red="0.18" />
+                <Item alpha="1.0" blue="0.8" green="0.71" name="Tanktop" red="0.89" />
+            </UpperBody>
+            <LowerBody>
+                <Item alpha="1.0" blue="0.18" green="0.18" name="Panties" red="0.18" />
+                <Item alpha="1.0" blue="0.18" green="0.18" name="Leggings" red="0.18" />
+            </LowerBody>
+            <Feet>
+                <Item alpha="1.0" blue="0.35" green="0.31" name="Sneakers" palpha="1.0" pattern="Pattern_1" pblue="0.35" pgreen="0.31" pred="0.35" red="0.35" />
+            </Feet>
+            <Accessories />
+        </Outfit>
+        <Outfit name="WineBra Shorts Workout">
+            <UpperBody>
+                <Item alpha="1.0" blue="0.21" green="0.18" name="Sports_Bra" red="0.44" />
+            </UpperBody>
+            <LowerBody>
+                <Item alpha="1.0" blue="0.18" green="0.18" name="Panties" red="0.18" />
+                <Item alpha="1" blue="0" green="0.0" name="Booty_Shorts" red="0.0" />
+            </LowerBody>
+            <Feet>
+                <Item alpha="1.0" blue="0.35" green="0.31" name="Sneakers" palpha="1" pattern="Pattern_1" pblue="1" pgreen="1" pred="1" red="0.35" />
+            </Feet>
+            <Accessories />
+        </Outfit>
+        <Outfit name="GreenTank Workout">
+            <UpperBody>
+                <Item alpha="1.0" blue="0.18" green="0.18" name="Sports_Bra" red="0.18" />
+                <Item alpha="0.8" blue="0.65" green="0.65" name="Tanktop" red="0.4" />
+            </UpperBody>
+            <LowerBody>
+                <Item alpha="1.0" blue="0.18" green="0.18" name="Cotton_Panties" red="0.18" />
+                <Item alpha="1.0" blue="0.35" green="0.31" name="Leggings" red="0.35" />
+            </LowerBody>
+            <Feet>
+                <Item alpha="0.8" blue="0.65" green="0.65" name="Sneakers" palpha="1" pattern="Pattern_1" pblue="1" pgreen="1" pred="1" red="0.4" />
+            </Feet>
+            <Accessories />
+        </Outfit>
+        <Outfit name="GreenTank And Shorts Workout">
+            <UpperBody>
+                <Item alpha="1.0" blue="0.18" green="0.18" name="Sports_Bra" red="0.18" />
+                <Item alpha="0.8" blue="0.65" green="0.65" name="Tanktop" red="0.4" />
+            </UpperBody>
+            <LowerBody>
+                <Item alpha="1.0" blue="0.18" green="0.18" name="Cotton_Panties" red="0.18" />
+                <Item alpha="1.0" blue="0.18" green="0.18" name="Booty_Shorts" red="0.18" />
+            </LowerBody>
+            <Feet>
+                <Item alpha="0.8" blue="0.65" green="0.65" name="Sneakers" palpha="1" pattern="Pattern_1" pblue="1" pgreen="1" pred="1" red="0.4" />
+            </Feet>
+            <Accessories />
+        </Outfit>
+        <Outfit name="HighVis Workout">
+            <UpperBody>
+                <Item alpha="1.0" blue="0.08" green="1.0" name="Sports_Bra" palpha="1.0" pattern="Pattern_1" pblue="0.18" pgreen="0.18" pred="0.18" red="0.22" />
+            </UpperBody>
+            <LowerBody>
+                <Item alpha="1.0" blue="0.08" green="1.0" name="Panties" red="0.22" />
+                <Item alpha="1.0" blue="0.18" green="0.18" name="Booty_Shorts" red="0.18" />
+            </LowerBody>
+            <Feet>
+                <Item alpha="1.0" blue="0.18" green="0.18" name="Sneakers" palpha="1.0" pattern="Pattern_1" pblue="0.08" pgreen="1.0" pred="0.22" red="0.18" />
+            </Feet>
+            <Accessories />
+        </Outfit>
+        <Outfit name="Dancing Workout">
+            <UpperBody>
+                <Item alpha="0.95" blue="0.15" green="0.15" name="Leotard" red="0.15" />
+            </UpperBody>
+            <LowerBody>
+                <Item alpha="0.95" blue="0.71" green="0.41" name="Micro_Skirt" palpha="1.0" pattern="Pattern_1" pblue="0.95" pgreen="0.95" pred="0.95" red="1" />
+            </LowerBody>
+            <Feet>
+                <Item alpha="0.95" blue="0.63" green="0.44" name="High_Socks" red="0.87" />
+                <Item alpha="0.95" blue="0.15" green="0.15" name="Slips" red="0.15" />
+            </Feet>
+            <Accessories>
+                <Item alpha="0.95" blue="0.15" green="0.15" name="Upper_Eye_Shadow" red="0.15" />
+                <Item alpha="0.7" blue="0.325" green="0.039" name="Lipstick" red="0.843" />
+            </Accessories>
+        </Outfit>	
+        <Outfit name="Sexy SportsBra Workout">
+            <UpperBody>
+                <Item alpha="0.95" blue="0.36" green="0.92" name="Sports_Bra" palpha="0.95" pattern="Pattern_1" pblue="0.3" pgreen="0.3" pred="0.3" red="0.98" />
+            </UpperBody>
+            <LowerBody>
+                <Item alpha="0.95" blue="0.95" green="0.95" name="Thong" red="0.95" />
+                <Item alpha="0.95" blue="0.3" green="0.3" name="Leggings" palpha="0.95" pattern="Pattern_1" pblue="0.36" pgreen="0.92" pred="0.98" red="0.3" />
+            </LowerBody>
+            <Feet>
+                <Item alpha="0.95" blue="0.3" green="0.3" name="Sneakers" palpha="0.95" pattern="Pattern_1" pblue="0.36" pgreen="0.92" pred="0.98" red="0.3" />
+            </Feet>
+            <Accessories>
+                <Item alpha="0.95" blue="0.15" green="0.15" name="Upper_Eye_Shadow" red="0.15" />
+                <Item alpha="0.7" blue="0.325" green="0.039" name="Lipstick" red="0.843" />
+            </Accessories>
+        </Outfit>	
+		<Outfit name="Slutty Gym Outfit">
+			<UpperBody>
+                <Item alpha="0.95" blue="0.95" green="0.95" name="Lingerie_One_Piece" red="0.95" />
+            </UpperBody>
+            <LowerBody>
+                <Item alpha="0.95" blue="0.71" green="0.41" name="Booty_Shorts" red="1" />
+            </LowerBody>
+            <Feet>
+                <Item alpha="0.95" blue="0.71" green="0.41" name="Sneakers" palpha="1" pattern="Pattern_1" pblue="1" pgreen="1" pred="1" red="1" />
+            </Feet>
+            <Accessories>
+                <Item alpha="0.95" blue="0.15" green="0.15" name="Upper_Eye_Shadow" red="0.15" />
+                <Item alpha="0.95" blue="0.63" green="0.44" name="Wide_Choker" red="0.87" />
+                <Item alpha="0.95" blue="0.71" green="0.41" name="Full_Shimmer" red="1" />
+                <Item alpha="0.8" blue="0.17" green="0.17" name="Lipstick" red="0.81" />			
+            </Accessories>		
+		</Outfit>
+    </FullSets>
+    <UnderwearSets>
+        <Outfit name="Basic Workout Underwear">
+            <UpperBody>
+                <Item alpha="1.0" blue="0.18" green="0.18" name="Sports_Bra" red="0.18" />
+            </UpperBody>
+            <LowerBody>
+                <Item alpha="1.0" blue="0.18" green="0.18" name="Panties" red="0.18" />
+            </LowerBody>
+            <Feet />
+            <Accessories />
+        </Outfit>
+		<Outfit name="Sexy Black Workout Underwear">
+			<UpperBody>
+                <Item alpha="0.95" blue="0.1" green="0.1" name="Lingerie_One_Piece" red="0.1" />
+            </UpperBody>
+			<LowerBody />
+            <Feet />
+            <Accessories>
+                <Item alpha="0.95" blue="0.15" green="0.15" name="Upper_Eye_Shadow" red="0.15" />
+                <Item alpha="0.8" blue="0.17" green="0.17" name="Lipstick" red="0.81" />			
+			</Accessories>
+		</Outfit>
+    </UnderwearSets>
+    <OverwearSets>
+        <Outfit name="Workout Overwear RedCami">
+            <UpperBody>
+                <Item alpha="1.0" blue="0.21" green="0.18" name="Tanktop" red="0.44" />
+            </UpperBody>
+            <LowerBody>
+                <Item alpha="1.0" blue="0.35" green="0.31" name="Leggings" red="0.35" />
+            </LowerBody>
+            <Feet>
+                <Item alpha="1.0" blue="0.35" green="0.31" name="Sneakers" palpha="1" pattern="Pattern_1" pblue="1" pgreen="1" pred="1" red="0.35" />
+            </Feet>
+            <Accessories />
+        </Outfit>
+        <Outfit name="Green TShirt Workout Overwear">
+            <UpperBody>
+                <Item alpha="1.0" blue="0.65" green="0.65" name="Tshirt" red="0.4" />
+            </UpperBody>
+            <LowerBody>
+                <Item alpha="1.0" blue="0.18" green="0.18" name="Leggings" red="0.18" />
+            </LowerBody>
+            <Feet>
+                <Item alpha="1.0" blue="0.35" green="0.31" name="Sneakers" palpha="0.8" pattern="Pattern_1" pblue="0.65" pgreen="0.65" pred="0.4" red="0.35" />
+            </Feet>
+            <Accessories />
+        </Outfit>
+        <Outfit name="Sexy Workout Overwear">
+            <UpperBody>
+                <Item alpha="1.0" blue="0.71" green="0.41" name="Sports_Bra" palpha="1.0" pattern="Pattern_1" pblue="0.18" pgreen="0.18" pred="0.18" red="1"/>
+            </UpperBody>
+            <LowerBody>
+                <Item alpha="0.95" blue="0.71" green="0.41" name="Booty_Shorts" red="1" />
+            </LowerBody>
+            <Feet>
+                <Item alpha="0.95" blue="0.71" green="0.41" name="Sneakers" palpha="1" pattern="Pattern_1" pblue="1" pgreen="1" pred="1" red="1" />
+            </Feet>
+            <Accessories />
+        </Outfit>	
+    </OverwearSets>
+</Wardrobe>

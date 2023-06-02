@@ -1,0 +1,9 @@
+The full contents of Lab Rats 2 are provided as is for modification and expansion by the user with the exception of all files provided inside of the "shader" folder, which includes a specific liceanse (see folder for details). The user is free to make any modifications for personal use.
+
+Script files, images, and sound files are all provided as is to the user for use in other projects that may be distributed as long as such works meet the following criteria:
+
+1) All work that makes use of these files and images is made available at no cost to anyone who would like to access it.
+
+2) Any project that makes use of the files and images contained in Lab Rats 2 must attribute the assets appropriately. Including a link to the Lab Rats Patreon page on the main page, or in close proximity to it, will be sufficient
+
+These requirements help keep Lab Rats 2 free and open for everyone, and furthers the spirit in which it was developed. If you make something cool and want to share it, or have any questions regarding what you can and can't do with these assets send me an email at "vrengames@gmail.com"

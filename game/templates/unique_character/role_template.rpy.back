@@ -1,0 +1,86 @@
+
+init 2 python:
+    def TEMPLATE_mod_initialization():
+        #Start with her wardrobe and base outfit
+        TEMPLATE_wardrobe = wardrobe_from_xml("TEMPLATE_Wardrobe")  #Requires creation of a new wardrobe file. Alternatively, you can use one of the default ones, IE "Sarah_Wardrobe"
+        TEMPLATE_base_outfit = Outfit("TEMPLATE's base accessories")
+        the_glasses = modern_glasses.get_copy()
+        the_glasses.colour = [.15, .15, .15, 1.0]
+        the_lipstick = lipstick.get_copy()
+        the_lipstick.colour = [.15, .15, .15, 0.5]
+        the_rings = garnet_ring.get_copy()   #Change this
+        the_rings.colour = [.82,.15,.15,1.0]
+        TEMPLATE_base_outfit.add_accessory(the_lipstick)
+        TEMPLATE_base_outfit.add_accessory(the_rings)
+        TEMPLATE_base_outfit.add_accessory(the_glasses)
+
+        # init TEMPLATE role
+        TEMPLATE_role = Role(role_name ="TEMPLATE", actions =[], hidden = True)
+
+        #global TEMPLATE person file
+        global TEMPLATE
+        TEMPLATE = make_person(name = "TEMPLATE",   # First name
+            last_name ="Greene",                    # Last Name
+            age = 42,                               # Years Old
+            body_type = "thin_body",                # Use "thin_body", "standard_body", or "curvy_body". For pregnant, suggest using become_pregnant() function after person is created.
+            face_style = "Face_14",                 # 1-4 and 6-14 (5 is missing from vanilla files.)
+            tits="C",                               # "AA" "A" "B" "C" "D" "DD" "DDD" "E" "F" "FF"... blame vren for weird sizing.
+            height = 0.92,                          # Not sure the limits on this one
+            hair_colour="black",                    # See list_of_hairs for options
+            hair_style = long_hair,                 # See game/clothing_lists.rpy for options
+            pubes_colour = None,                    # Same as hair colour
+            pubes_style = None,                     # shaved_pubes, landing_strip_pubes, diamond_pubes, trimmed_pubes, or default_pubes
+            skin="tan",                             # "white" "black" "tan"
+            tan_style = None,                       # ?Not sure, presumably mod related
+            eyes = "brown",                         # "dark blue", "light blue", "green", "brown", "grey", or "emerald"
+            job = None,                             # Generic job title. Use for random town people or people with jobs OUTSIDE of MC's company
+            personality = TEMPLATE_personality,     # Personality
+            custom_font = None,                     #
+            name_color = "#228b22",                 #
+            dial_color = "#228b22" ,                 #
+            starting_wardrobe = TEMPLATE_wardrobe,  # Leave None to make basic wardrobe
+            stat_array = [1,4,4],                   # [charisma, int, focus]
+            skill_array = [1,1,3,5,1],              # [HR, market, research, production, supply]
+            sex_skill_array = [4,2,2,2],                  # [foreplay, oral, vagnila, anal]
+            sluttiness = 7,                   #
+            obedience = 18,                   # For some reason Vren adds 100 to this. Use negative values for disobedient girls
+            happiness = 88,                   #
+            love = 0,                         #
+            start_home = None,                      # Use if this girl is living with someone else
+            title = None,                           # Only use if MC knows this girl from the start of the game or whenever she is generated
+            possessive_title = None,                # Same as above
+            mc_title = None,                        # Same as above
+            relationship = "Single",                # "Single", "Girlfriend", "Fiancée", "Married"
+            kids = 1,                               #
+            SO_name = None,                         # IF she isn't Single
+            generate_insta = None,                  # True or False, random if None
+            generate_dikdok = None,                 #
+            generate_onlyfans = None,               #
+            force_random = True,                    # If False, we may grab a pre-generated person for his function from patreon rewards and overwrite her properties!
+            base_outfit = TEMPLATE_base_outfit,     #
+            forced_opinions = [["production work", 2, True], ["work uniforms", -1, False], ["flirting", 1, False], ["working", 1, False], ["the colour green", 2, False], ["pants", 1, False], ["the colour blue", -2, False], ["classical music", 1, False]],
+            forced_sexy_opinions = [["taking control", 2, False], ["getting head", 2, False], ["drinking cum", -2, False], ["giving blowjobs", -2, False], ["public sex", 2, False]])   #random_lists.rpy for list of sexy and normal opinions
+
+        TEMPLATE.generate_home()                                    #Omit this if girl lives with someone else
+        TEMPLATE.set_schedule(TEMPLATE.home, the_times = [0,1,2,3,4])   #Hide TEMPLATE at home until we are ready to use her
+                                                                    #Any unused times, girl will wander public areas during those time slots.
+        TEMPLATE.home.add_person(TEMPLATE)                          #Need to add her to the world or MC will not encounter her.
+
+        TEMPLATE.event_triggers_dict["intro_complete"] = False      #Use this section to init her event_triggers_dict. Useful for character story flags or variables.
+
+        # become_pregnant(TEMPLATE, mc_father = False, progress_days = 60)  #Uncomment to have her start pregnant. Belly at day 30-40, so make between 40-90 to give pregnant belly.
+
+        #*******
+        #We need some method to begin her story. Examples are mandatory crisis events that we can load here. If girl is wandering town, you can add it to her personality introduction.
+
+        # Below is an example of how you could make a mandatory event that would start the TEMPLATE character's story. The label and the requirement functions are not included in this template.
+        # TEMPLATE_intro = Action("TEMPLATE_intro",TEMPLATE_intro_requirement,"TEMPLATE_intro_label")
+        # mc.business.add_mandatory_crisis(TEMPLATE_intro) #Add the event here so that it pops when the requirements are met.
+
+        # set town relationships
+        # town_relationships.update_relationship(TEMPLATE, kaya, "Daughter", "Mother")
+        # town_relationships.update_relationship(nora, TEMPLATE, "Friend")
+        # town_relationships.update_relationship(lily, TEMPLATE, "Rival")
+
+        TEMPLATE.add_role(TEMPLATE_role)
+        return

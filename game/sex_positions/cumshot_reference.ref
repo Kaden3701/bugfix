@@ -1,0 +1,23 @@
+# Copy paste this code to use it for cumshots in position files
+
+$ climax_controller = ClimaxController(["Cum using your hand","masturbation"],
+      ["Cum on the floor","air"],
+      ["Cum on her","body"],
+      ["Cum on her face","face"],
+      ["Cum on her tits","tits"],
+      ["Cum in her mouth","mouth"],
+      ["Cum inside of her","pussy"],
+      ["Cum inside of her ass","anal"],
+      ["Cum down her throat","throat"])
+$ the_choice = climax_controller.show_climax_menu()
+if the_choice == "Cum inside of her":
+      $ climax_controller.do_clarity_release(the_girl)
+
+
+# Use this code for cumshots that MC has no control over
+
+For masturbation use:
+$ ClimaxController.manual_clarity_release()
+
+Else:
+$ ClimaxController.manual_clarity_release(climax_type = "anal", the_person = the_girl)

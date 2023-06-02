@@ -1,0 +1,85 @@
+init 1 python:
+
+    def SB_fetish_mom_vaginal_requirement():
+        if not day%7 == 4 and mc.is_in_bed and mc.energy > 30:   # not on Friday night
+            return True
+        return False
+
+    def SB_fetish_lily_vaginal_requirement():
+        if not day%7 == 4 and mc.is_in_bed and mc.energy > 30:   # not on Friday night
+            return True
+        return False
+
+    def SB_fetish_vaginal_requirement():
+        if not day%7 == 4 and mc.is_in_bed and mc.energy > 30:   # not on Friday night
+            return True
+        return False
+
+    def SB_fetish_vaginal_event_requirement():
+        if not day%7 == 4 and mc.is_in_bed and mc.energy > 30:   # not on Friday night
+            return True
+        return False
+
+    def add_sb_fetish_mom_vaginal_event():
+        SB_fetish_mom_vaginal_crisis = Action("Mom Loves Vaginal Sex", SB_fetish_mom_vaginal_requirement, "SB_fetish_mom_vaginal_label")
+        mc.business.add_mandatory_crisis(SB_fetish_mom_vaginal_crisis)
+        return
+
+    def add_sb_fetish_lily_vaginal_event():
+        SB_fetish_lily_vaginal_crisis = Action("Lily Loves Vaginal Sex", SB_fetish_lily_vaginal_requirement, "SB_fetish_lily_vaginal_label")
+        mc.business.add_mandatory_crisis(SB_fetish_lily_vaginal_crisis)
+        return
+
+    def add_sb_fetish_vaginal_crisis(person):
+        SB_fetish_vaginal_crisis = Action("Loves Vaginal Sex", SB_fetish_vaginal_requirement, "SB_fetish_vaginal_label", args = person)
+        mc.business.add_mandatory_crisis(SB_fetish_vaginal_crisis)
+        return
+
+    def add_sb_fetish_vaginal_event(person):
+        SB_fetish_vaginal_event = Action("Vaginal Sex Visit", SB_fetish_vaginal_event_requirement, "SB_fetish_vaginal_event_label", args = person)
+        mc.business.add_mandatory_crisis(SB_fetish_vaginal_event)
+        return
+
+
+#SBV1
+label SB_fetish_vaginal_label(the_person):
+    pass
+    return
+
+
+
+init 1 python:
+    def SB_cowgirl_wakeup_requirement():
+        if not day%7 == 5 and time_of_day == 0:
+            return True
+        return False
+
+
+
+init 2 python:
+    def SB_fetish_vaginal_recurring_requirement():
+        if mc.is_in_bed and not day%7 == 4: # not on Friday nights
+            return not get_vaginal_fetish_employee() is None
+        return False
+
+    SB_fetish_vaginal_recurring_crisis = Action("Vaginal Fetish Recurring Crisis",SB_fetish_vaginal_recurring_requirement,"SB_fetish_vaginal_recurring_label")
+    crisis_list.append([SB_fetish_vaginal_recurring_crisis, 5])
+
+    def SB_fetish_vaginal_lily_recurring_requirement():
+        if mc.is_in_bed and not day%7 == 4: # not on Friday nights
+            if lily.has_role(vaginal_fetish_role):
+                if lily.event_triggers_dict.get("LastVaginalFetish", 0) + 10 < day:
+                    return True
+        return False
+
+    def get_vaginal_fetish_employee():
+        meets_fetish_list = []
+        for person in mc.business.employee_list:
+            if person.has_role(vaginal_fetish_role):
+                if person.event_triggers_dict.get("LastVaginalFetish", 0) + 10 < day:
+                    meets_fetish_list.append(person)
+        if mom.has_role(vaginal_fetish_role):
+            if mom.event_triggers_dict.get("LastVaginalFetish", 0) + 10 < day:
+                meets_fetish_list.append(mom)
+
+        return get_random_from_list(meets_fetish_list)

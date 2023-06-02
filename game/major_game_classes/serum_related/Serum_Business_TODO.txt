@@ -1,0 +1,31 @@
+1) Add "trait points" to the serum trait item
+-> Mental (blue) - Any trait that affects mental stats.
+-> Physical (green) - Any trait that physically alters the girl.
+-> Sexual (pink) - Any trait that alters sex traits, skills, Sluttiness, Arousal.
+-> Medical (white) - Anything else we want to give extra value without keying it to one of the other things.
+-> Flaws (black)- Given by side effects.
+-> Attention (orange) - Given by "sketchy" traits. Don't sell drugs kids.
+
+2) Add total trait points to serum designs, summed when you add traits.
+
+3) Way to display a serum's aspect poitns, both while creating and when hovering it.
+ -> (Take the time for a rework of all the serum display stuff?)
+
+4) Remove Value from both serumtrait and serumdesign (value is now determined by the aspects and the going market value)
+
+5) Determine the market value for serum aspects. Probably store that on the business and have it modified each onDay.
+
+6) Get selling to the open market working.
+ -> Selling a serum gains you aspect*value dollars, then lowers the value of that aspect slightly (maybe this is what marketting is good for?)
+
+Each shift working marketting expands the "pool" you are putting your aspect points into. More retail customers means each dose reduces the price by less. Price = Nat Price/1+(aspects sold/customers). Maybe call it "market reach" or something.
+
+If we don't have aspects sold reset then over time the price of any aspect approaches 0. If we increase aspects sold in line with customers then the price of an aspect holds at 0.5. Double the amount of marketing staff per serum sold and that price rises to 1 + 1/2 = price/1.5 = 66% of nat price.
+
+Note that flaws DON'T follow this logic. They have a natural price and hold that price at all times. So flawed serum designs may be profitable with a good marketing team, but fall apart quickly.
+
+If we assume it takes $1 of material and $1 of labour to make 2 aspects (ie. each aspect costs roughly $1) then a reasonable natural price would be $3. With a "normal" marketting force that's a value of $1.5/aspect. leaving $0.5 of profit to pay for that marketting force, upgrades, ect.
+
+Contracts should offer significantly more. Assume we want at least double profit, and that 33% of aspects in a trait are going to be "wrong" in some way (ie. not factored into the price). That means we need to treat "correct" aspect point as 2.5x the "natural" price. Then offer a flat value for that serum when delivered.
+
+Have a certain number of "contract slots". default to 2, refrshed each Monday. You can "accept" a contract, locking it in for it's duration. Business policy let's you increase the number of contract slots you can have. (which both lets you see more contracts at a time, lock in good contracts, and fulful multiple contracts per week if you want.)
